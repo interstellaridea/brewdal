@@ -1,0 +1,180 @@
+/* line 6, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+.hero-img {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 11, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+.brew {
+  background-image: url("/assets/hero_brew.png");
+}
+
+/* line 15, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+.brew-tools {
+  background-image: url("/assets/brew_tools.png");
+  color: #fff;
+}
+
+/* line 20, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+.main-text {
+  font-family: 'Adam';
+  font-size: 3em;
+}
+
+/* line 25, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+.banner-wrap {
+  text-align: center;
+  align-items: center;
+}
+
+/* line 30, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+.come-back {
+  font-size: 1.5em;
+}
+
+/* css animated loading dots */
+/* line 36, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+.message-text {
+  font-size: 2em;
+}
+
+/* line 40, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+.message-text span {
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  /**
+   * Use the blink animation, which is defined above
+   */
+  animation-name: blink;
+  /**
+   * The animation should take 1.4 seconds
+   */
+  animation-duration: 1.4s;
+  /**
+   * It will repeat itself forever
+   */
+  animation-iteration-count: infinite;
+  /**
+   * This makes sure that the starting style (opacity: .2)
+   * of the animation is applied before the animation starts.
+   * Otherwise we would see a short flash or would have
+   * to set the default styling of the dots to the same
+   * as the animation. Same applies for the ending styles.
+   */
+  animation-fill-mode: both;
+}
+
+/* line 65, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+.message-text span:nth-child(2) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .2s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: .2s;
+}
+
+/* line 74, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+.message-text span:nth-child(3) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: .4s;
+}
+
+@keyframes blink {
+  /**
+   * At the start of the animation the dot
+   * has an opacity of .2
+   */
+  0% {
+    opacity: .2;
+  }
+  /**
+   * At 20% the dot is fully visible and
+   * then fades out slowly
+   */
+  20% {
+    opacity: 1;
+  }
+  /**
+   * Until it reaches an opacity of .2 and
+   * the animation can start again
+   */
+  100% {
+    opacity: .2;
+  }
+}
+/* END loading dots... */
+/* Media Queries */
+@media screen and (min-width: 600px) and (max-width: 736px) {
+  /* line 110, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+  .hero-img {
+    height: 250px;
+  }
+
+  /* line 113, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+  .banner-wrap {
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 415px) {
+  /* line 119, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+  .hero-img {
+    height: 220px;
+  }
+
+  /* line 122, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/welcome.scss */
+  .message-text {
+    font-size: 1.2em;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/application.css.scss */
+html {
+  margin: 0;
+}
+
+/* line 22, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/application.css.scss */
+body {
+  background-color: #FBFFFE;
+}
+
+/* line 26, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/application.css.scss */
+.container {
+  display: flex;
+}
+
+/* line 30, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/application.css.scss */
+.main-contain {
+  height: 100%;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: 'Adam';
+  src: url(/assets/Adam-5d9f02ccd3cc729fbee7eae985b1b928018474c5e2d955ed7903aeb6bc824002.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 43, /Users/svaldez/railsApps/brewdal/app/assets/stylesheets/application.css.scss */
+p {
+  font-family: 'Adam';
+}

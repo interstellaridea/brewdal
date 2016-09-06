@@ -2,3 +2,125 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.hero-img {
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+}
+.brew {
+	background-image: url(image-path("/assets/hero_brew.png"));
+}
+
+.brew-tools{
+	background-image: url(image-path("/assets/brew_tools.png"));
+	color: #fff;
+}
+
+.main-text {
+	font-family: 'Adam';
+	font-size: 3em;
+}
+
+.banner-wrap {
+	text-align: center;
+	align-items: center;
+}
+
+.come-back{
+	font-size: 1.5em;
+}
+
+
+/* css animated loading dots */
+.message-text {
+	font-size: 2em;
+}
+
+.message-text span {
+		font-family: 'Times New Roman';
+		font-size: 50px;
+    /**
+     * Use the blink animation, which is defined above
+     */
+    animation-name: blink;
+    /**
+     * The animation should take 1.4 seconds
+     */
+    animation-duration: 1.4s;
+    /**
+     * It will repeat itself forever
+     */
+    animation-iteration-count: infinite;
+    /**
+     * This makes sure that the starting style (opacity: .2)
+     * of the animation is applied before the animation starts.
+     * Otherwise we would see a short flash or would have
+     * to set the default styling of the dots to the same
+     * as the animation. Same applies for the ending styles.
+     */
+    animation-fill-mode: both;
+}
+
+.message-text span:nth-child(2) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .2s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .2s;
+}
+
+.message-text span:nth-child(3) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .4s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .4s;
+}
+@keyframes blink {
+	    /**
+	     * At the start of the animation the dot
+	     * has an opacity of .2
+	     */
+	    0% {
+	      opacity: .2;
+	    }
+	    /**
+	     * At 20% the dot is fully visible and
+	     * then fades out slowly
+	     */
+	    20% {
+	      opacity: 1;
+	    }
+	    /**
+	     * Until it reaches an opacity of .2 and
+	     * the animation can start again
+	     */
+	    100% {
+	      opacity: .2;
+	    }
+}
+
+/* END loading dots... */
+
+/* Media Queries */
+@media screen and (min-width: 600px) and (max-width: 736px ){
+	.hero-img {
+		height: 250px;
+	}
+	.banner-wrap{
+		margin-top: 2%;
+	}
+}
+
+@media screen and (max-width: 415px){
+	.hero-img{
+		height: 220px;
+	}
+	.message-text{
+		font-size:1.2em;
+	}
+}
+
