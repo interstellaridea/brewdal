@@ -33,6 +33,27 @@
 	font-size: 1.5em;
 }
 
+.social {
+	flex-direction: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.insta_icon{
+	margin-left: 3px;
+	color: #000;
+	a{
+		text-decoration: none;
+		&:visited {
+			color: #000;
+		}
+	}
+	a:hover {
+		text-decoration: none;
+		color: #6a413a;
+	}
+}
+
 
 /* css animated loading dots */
 .message-text {
