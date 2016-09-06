@@ -9,11 +9,11 @@
 	background-position: center;
 }
 .brew {
-	background-image: url(image-path("/assets/hero_brew.png"));
+	background-image: asset-url("hero_brew.png");
 }
 
 .brew-tools{
-	background-image: url(image-path("/assets/brew_tools.png"));
+	background-image: asset-url("/assets/brew_tools.png");
 	color: #fff;
 }
 
