@@ -23,8 +23,10 @@
 }
 
 .banner-wrap {
+	flex-direction: column;
 	text-align: center;
 	align-items: center;
+	margin-bottom: 15px;
 }
 
 .come-back{
@@ -104,6 +106,10 @@
 }
 
 /* END loading dots... */
+.fb-container{
+	align-self: center;
+}
+
 
 /* Media Queries */
 @media screen and (min-width: 600px) and (max-width: 736px ){
