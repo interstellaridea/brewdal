@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+
+$(document).ready( function() {
+
+	$social = $('#social-outlets');
+	$social.hide().delay(1200).fadeIn(900);
+
+});

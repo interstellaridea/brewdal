@@ -33,15 +33,20 @@
 	font-size: 1.5em;
 }
 
+#social_wrapper {
+	height: 70px;
+}
+
 .social {
 	flex-direction: row wrap;
 	justify-content: space-around;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .insta_icon{
-	margin-left: 3px;
+	margin-left: 5px;
 	color: #000;
+	font-size: 2.4em;
 	a{
 		text-decoration: none;
 		color: #000;
